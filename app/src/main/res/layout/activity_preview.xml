@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:id="@+id/btnlayout"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnFront"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+
+            android:text="Front"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+
+            android:text="Back"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <ViewFlipper
+        android:id="@+id/preview_flip"
+        android:layout_below="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="3000"
+        android:padding="10dp"
+        android:inAnimation="@anim/slide_in_right"
+        android:outAnimation="@anim/slide_out_left"
+        android:layout_gravity="center_horizontal" >
+
+
+    </ViewFlipper>
+</RelativeLayout>

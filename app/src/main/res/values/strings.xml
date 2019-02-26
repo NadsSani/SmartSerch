@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SmartSerch</string>
+    <string name="title_activity_home_page">HomePageActivity</string>
+    <string name="no_sub_categories">NO SUB CATEGORIES TO LOAD</string>
+    <string name="search">Filter By Name, Place, District OR Category</string>
+    <string name="searchbydist">Filter By District</string>
+    <string name="no_cards">No Cards Found</string>
+    <string name="goog_maps_api_key">AIzaSyAV09AdqtzTTW1lMTt7uejKRcDTwZgb3s0</string>
+    <string name="searchtheater">Filter By District</string>
+    <string-array name="country_array">
+        <item>Select Currency</item>
+       <item>Bitcoin</item>
+        <item>US Dollar</item>
+        <item>Euro</item>
+        <item>Indian Rupee</item>
+        <item>Kuwait Dinar</item>
+        <item>Saudi Riyal</item>
+        <item>Sinapore Dollar</item>
+        <item>United Arab Emirates Dirham</item>
+        <item>Australian Dollar</item>
+        <item>British Pound</item>
+        <item>Canadian Dollar</item>
+        <item>Qatar Riyal</item>
+        <item>Omani Riyal</item>
+        <item>Yemen Riyal</item>
+        <item>Sri Lankan Rupee</item>
+
+    </string-array>
+</resources>

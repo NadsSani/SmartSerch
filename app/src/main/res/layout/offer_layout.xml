@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="112dp"
+            android:src="@drawable/smartofferlogo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="See What is HOT"
+            android:layout_weight=".7"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="View Offers"
+            android:id="@+id/btnviewoffer"
+            android:layout_weight=".3"
+            android:background="#d90011"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

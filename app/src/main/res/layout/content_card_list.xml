@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appbrain="http://schemas.android.com/apk/lib/com.appbrain"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <ViewFlipper
+        android:id="@+id/cardlist_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:flipInterval="10000"
+        android:padding="15dp"
+        android:background="#2e3142"
+        android:inAnimation="@anim/slide_in_right"
+        android:outAnimation="@anim/slide_out_left"
+        android:layout_gravity="center_horizontal" >
+    </ViewFlipper>
+
+    <TextView
+        android:id="@+id/txtNone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:text="@string/no_cards"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/catLoading"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        />
+    <com.appbrain.AppBrainBanner
+        android:layout_margin="5dp"
+        appbrain:adid="card_list_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lstcards"
+        />
+</LinearLayout>
+
